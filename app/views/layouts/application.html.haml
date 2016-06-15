@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title Great Chow Mandarin Chinese Food
+
+    %meta{ property: "name", content: "Great Chow"}
+    %meta{ property: "description", content: "Welcome to Great Chow, an innovative local Asian restaurant serving the finest Asian-fusion at its Quincy in Massachusetts"}
+    %meta{ property: "keywords", content: "chinese food, japanese food, sushi, great chow, restaurant, cuisine, abington, massachusetts, quincy, south shore, asian fusion"}
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0"}
+    %meta{ charset: "utf-8"}
+
+    %link{ href: "stylesheet", href: "stylesheet/base.css"}
+
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    = javascript_include_tag 'vendor/modernizr'
+    = csrf_meta_tags
+
+  %body
+    %header
+      = render 'layouts/navbar'
+      .row
+        = render 'layouts/flash'
+    = yield
+    = javascript_include_tag "application"
+  = render layouts/footer

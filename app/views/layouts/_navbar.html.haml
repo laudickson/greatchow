@@ -1,0 +1,41 @@
+%nav.top-bar{data: {topbar: true}, role: "navigation"}
+  %ul.title-area
+    %li.name
+      %h1#defaultfont
+        %a{href: "/"}G E N E V A // S T R I P E S
+    %li.show-for-medium-up#searchbar#has-form
+      .row.collapse
+        .small-9.columns
+          %input{type: "text", placeholder: "Search"}
+        .small-1.columns.end
+          %a.secondary.button{href: "#"}
+            %i.fi-magnifying-glass
+    %li.show-for-small-only.toggle-topbar.menu-icon
+      %a{href: "#"}MENU
+
+      %li
+        %a#defaultfont{href: "/about"}About
+      %li
+        %a#defaultfont{href: "/menu"}Menu
+      %li
+        %a#defaultfont{href: "/events"}Events
+      %li
+        %a#defaultfont{href: "/contact"}Contact
+      %li.has-dropdown
+        %a{href: "#"}
+          %i.fi-lock
+        %ul.dropdown
+          - if current_admin
+            %li
+              %a#defaultfont{href: "/admin/edit"}SETTINGS
+            %li
+              = link_to "SIGN OUT", destroy_author_session_path, method: :delete
+            %li
+              = link_to "PORTAL", portals_path
+          - else
+            %li
+              %a#defaultfont{href: "#"}{LANG}
+            %li
+              %a#defaultfont{href: "/authors/sign_up"}SIGN UP
+            %li
+              %a#defaultfont{href: "/authors/sign_in"}SIGN IN
