@@ -1,37 +1,19 @@
-.contain-to-grid.sticky
-  %nav.top-bar{ data: {topbar: true }}
-    %ul.title-area
-      %li.name
-        %h1
-          %a.logo.show-for-small-only{ src: '/assets/greatchowlogo.jpg' }
-      %li.toggle-topbar.menu-icon
-        %a{ href: "#" }
-          %span Menu
-
-    %section.top-bar-section
-      .logo-wrapper.hide-for-small-only
-        .logo
-          %img{ src: '/assets/greatchowlogo.jpg' }
-      %ul.right
+.show-for-small-only
+  .row
+    .small-3.columns
+      #mobile-logo
+        %img{ src: '/assets/greatchowlogo.jpg' }
+    .small-3.columns
+      %a{ 'data-dropdown' => 'drop1', 'aria-controls' => 'drop1', 'aria-expanded' => 'false'}
+        %i.fi-list
+      %ul#drop1.f-dropdown{ 'data-dropdown-content' => 'true', 'aria-hidden' => 'true'}
         %li
-          %a#defaultfont{ href: "/home" }Home
+          %a{ href: '/' }Home
         %li
-          %a#defaultfont{ href: "/about" }About
+          %a{ href: '/menu' }Menu
         %li
-          %a#defaultfont{ href: "/menu" }Menu
-      %ul.left
+          %a{ href: '/events' }Events
         %li
-          %a#defaultfont{ href: "/home" }Events
+          %a{ href: '/contact' }Contact
         %li
-          %a#defaultfont{ href: "/about" }Contact
-        - if current_admin
-          %li.has-dropdown
-            %a{ href: '#' }
-              %i.fi-lock
-            %ul.dropdown
-              %li
-                %a{ href: '/admin/edit'}Settings
-              %li
-                = link_to "Sign Out", destroy_user_session_path, method: :delete
-              %li
-                = link_to "PORTAL", portals_path
+          %a{ href: '/about' }About
