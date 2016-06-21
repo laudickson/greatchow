@@ -1,44 +1,37 @@
-.contain-to-grid
-  %nav.top-bar#top_bar{data: {topbar: true}, role: "navigation"}
-    %ul.title-area.inline-list
-      %li
-        %img{src: "/assets/greatchowlogo.jpg"}
-      %li.show-for-small-only.toggle-topbar.menu-icon
-        %a{href: "#"}MENU
+.contain-to-grid.sticky
+  %nav.top-bar{ data: {topbar: true }}
+    %ul.title-area
+      %li.name
+        %h1
+          %a.logo.show-for-small-only{ src: '/assets/greatchowlogo.jpg' }
+      %li.toggle-topbar.menu-icon
+        %a{ href: "#" }
+          %span Menu
+
     %section.top-bar-section
-      %ul.right.inline-list
+      .logo-wrapper.hide-for-small-only
+        .logo
+          %img{ src: '/assets/greatchowlogo.jpg' }
+      %ul.right
         %li
           %a#defaultfont{ href: "/home" }Home
         %li
           %a#defaultfont{ href: "/about" }About
         %li
           %a#defaultfont{ href: "/menu" }Menu
+      %ul.left
         %li
-          %a#defaultfont{ href: "/events" }Events
+          %a#defaultfont{ href: "/home" }Events
         %li
-          %a#defaultfont{ href: "/contact" }Contact
-
-      - if current_admin
-        %ul.right.inline-list
-          %li
-            %a{href: "/friendships"}Who's Chillin?
-          %li
-            %a{href: "/profiles"}Profile
-          %li
-            %a{href: "/users/edit"}Settings
-          %li
-            = link_to "Sign Out", destroy_user_session_path, method: :delete
+          %a#defaultfont{ href: "/about" }Contact
+        - if current_admin
           %li.has-dropdown
-            %a{href: "#"}
+            %a{ href: '#' }
               %i.fi-lock
             %ul.dropdown
-              - if current_admin
-                %li
-                  %a#defaultfont{href: "/admin/edit"}SETTINGS
-                %li
-                  = link_to "SIGN OUT", destroy_admin_session_path, method: :delete
-                %li
-                  = link_to "PORTAL", portals_path
-              - else
-                %li
-                  %a#defaultfont{href: "/admins/sign_in"}SIGN IN
+              %li
+                %a{ href: '/admin/edit'}Settings
+              %li
+                = link_to "Sign Out", destroy_user_session_path, method: :delete
+              %li
+                = link_to "PORTAL", portals_path
