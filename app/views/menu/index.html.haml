@@ -2,6 +2,7 @@
   .small-12.small-centered.columns
     .imageborder
       .menu-image1
+
 .row
   .small-6.columns
     .imageborder
@@ -11,13 +12,23 @@
       %p
         You'll find people from all walks of life frequenting Great Chow for one common reason: they all come for the "Great Chow".
         They all know that the freshest and highest quality ingredients are mandates of the menu and that friendly and attentive service is always the top priority.
+
 .row
   .small-6.columns
     .menublurb
       %p
         At Great Chow, it isn't only about eating out; it's about having an outstanding time and a great meal in one package. It's an overall experience we think you'll agree is absolutely priceless.
-
-        Great Chow offers take-out and delivery from both locations. Please click on the take out menu below to download a copy.
   .small-6.columns
     .imageborder
       .menu-image3
+
+.row
+  .small-8.small-centered.columns
+    .takeoutmenu
+      %p
+        Great Chow offers take-out and delivery from both locations. Please click on the take out menu below to download a copy.
+      %ul.inline-list
+        %li
+          =link_to 'Abington Takeout Menu', asset_path("abingtontakeoutmenu.pdf"), class: 'button secondary'
+        %li
+          =link_to 'Quincy Wollaston Takeout Menu', asset_path("wollastontakeoutmenu.pdf"), class: 'button secondary'

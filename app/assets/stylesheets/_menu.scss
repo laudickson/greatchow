@@ -6,15 +6,54 @@
   transform: translateY(-50%);
 }
 
-.menublurb{
-  background: #494949;
+.takeoutmenu{
+  background: #3b1d12;
   border: solid white 2px;
-  height: 40vh;
   position: relative;
+  text-align: center;
+
+  ul{
+    display: inline-block;
+  }
 
   p{
     color: white;
-    text-align: center;
+    position: relative;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
+  @media screen and (max-width: 3000px){
+    p{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 800px){
+    p{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    p{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 350px){
+    p{
+      font-size: 10px;
+    }
+  }
+}
+
+.menublurb{
+  background: #3b1d12;
+  border: solid white 2px;
+  height: 40vh;
+  position: relative;
+  text-align: center;
+
+  p{
+    color: white;
     @include vertical-align;
     position: relative;
     padding-right: 3%;
@@ -46,15 +85,15 @@
 .menu-image1{
   background: url('/assets/menu_img1.jpg');
   background-size: cover;
-  height: 40vh;
+  height: 50vh;
 }
 .menu-image2{
   background: url('/assets/menu_img2.jpg') center;
   background-size: auto 100%;
-  height: 40vh;
+  height: 39.5vh;
 }
 .menu-image3{
   background: url('/assets/menu_img3.jpg') center;
   background-size: auto 100%;
-  height: 40vh;
+  height: 39.5vh;
 }

@@ -4,8 +4,9 @@ Rails.application.routes.draw do
 
   resources :about, only: :index
   resources :menu, only: :index
-  resources :events, only: :index
+  resources :event, only: :index
   resources :contact, only: :index
-  resources :portals, only: :index
+  resources :reward, only: :index
+  resources :portal, only: :index
 
 end
