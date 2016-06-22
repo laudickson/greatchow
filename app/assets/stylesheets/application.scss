@@ -16,20 +16,64 @@
 
  */
 
+@import 'foundation_and_overrides';
+@import 'slick';
+@import 'slick-theme';
+@import 'menu';
+@import 'navbar';
+
 html, body{
   height: 100%;
   background: #301309;
 }
 
-// mobile navigation
-.fi-list{
-  font-size: 2rem;
-  float: right;
-  color: #FFFFFF;
+.footer{
+  p{
+    color: white;
+  }
+  @media screen and (max-width: 3000px){
+    p{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 800px){
+    p{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    p{
+      font-size: 11px;
+    }
+  }
 }
 
-#mobile-logo{
-  float: left;
-  width: 7.5rem;
+.imageborder{
+  border: 2px solid white;
+}
 
+.slidingimage1 {
+  background: url('/assets/home_img1.jpg');
+	background-size: cover;
+  height: 40vh;
+}
+.slidingimage2{
+  background: url('/assets/home_img2.jpg');
+	background-size: cover;
+  height: 40vh;
+}
+.slidingimage3{
+  background: url('/assets/home_img3.jpg');
+	background-size: cover;
+  height: 40vh;
+}
+.slidingimage4{
+  background: url('/assets/home_img4.jpg');
+	background-size: cover;
+  height: 40vh;
+}
+.slidingimage5{
+  background: url('/assets/home_img5.jpg');
+	background-size: cover;
+  height: 40vh;
 }

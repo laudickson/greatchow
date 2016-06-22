@@ -14,6 +14,47 @@
         %li
           %a{ href: '/events' }Events
         %li
+          %a{ href: '/about' }About
+        %li
           %a{ href: '/contact' }Contact
+        -if current_admin
+          %li.has-dropdown
+            %a{ href: '#' }
+              %i.fi-lock
+            %ul.dropdown
+              %li
+                %a{ href: '/admin/edit'}Settings
+              %li
+                = link_to "Sign Out", destroy_user_session_path, method: :delete
+              %li
+                = link_to "PORTAL", portals_path
+
+.hide-for-small-only
+  .row#navlogo
+    .small-3.small-centered.columns
+      #logo
+        %img{ src: '/assets/greatchowlogo.jpg' }
+  .row
+    .small-12.small-centered.columns
+      %ul.inline-list#nav-list
+        %li
+          %a{ href: '/' }Home
+        %li
+          %a{ href: '/menu' }Menu
+        %li
+          %a{ href: '/events' }Events
         %li
           %a{ href: '/about' }About
+        %li
+          %a{ href: '/contact' }Contact
+        -if current_admin
+          %li.has-dropdown
+            %a{ href: '#' }
+              %i.fi-lock
+            %ul.dropdown
+              %li
+                %a{ href: '/admin/edit'}Settings
+              %li
+                = link_to "Sign Out", destroy_user_session_path, method: :delete
+              %li
+                = link_to "PORTAL", portals_path

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
-  root to: "homes#index"
+  root to: "home#index"
 
   resources :about, only: :index
   resources :menu, only: :index

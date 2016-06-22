@@ -1,0 +1,43 @@
+@mixin vertical-align($position: relative){
+  position: $position;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+// mobile navigation
+.fi-list{
+  font-size: 2rem;
+  float: right;
+  color: #FFFFFF;
+  padding-top: 1rem;
+}
+
+#mobile-logo{
+  float: left;
+  width: 10rem;
+}
+
+//medium up nav
+#navlogo{
+  padding-top: 3rem;
+  @include vertical-align();
+}
+
+#logo{
+  width: 20rem;
+}
+
+#nav-list{
+  padding-top: 3rem;
+  padding-left: 5rem;
+
+  li{
+    margin: 0px 4rem;
+
+    a{
+      color: #FFFFFF;
+    }
+  }
+}
