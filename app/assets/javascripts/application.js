@@ -15,6 +15,11 @@
 //= require foundation
 //= require jquery.slick
 //= require initialize
+//= require jquery-tablesorter
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(function(){
+  $('#event-table').tablesorter({ sortList: [[1,0]] });
+});
