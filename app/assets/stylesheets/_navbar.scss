@@ -22,9 +22,13 @@
 //medium up nav
 #navlogo{
   padding-top: 3rem;
+  padding-bottom: 3rem;
   @include vertical-align();
 }
 
+#mediumnav{
+  padding-top: 5rem;
+}
 #logo{
   width: 20rem;
 }
