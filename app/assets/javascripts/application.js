@@ -32,6 +32,7 @@ function sideNav() {
 
 $(window).resize(function() {
   sideNav();
+});
 $(function(){
   $('#event-table').tablesorter({ sortList: [[1,0]] });
 });

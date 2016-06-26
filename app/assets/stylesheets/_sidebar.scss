@@ -1,5 +1,5 @@
 $sidebar-width: 90px;
-$nav-color: #333;
+// $nav-color: #333;
 
 .inner-wrap {
   width: auto;
@@ -23,7 +23,7 @@ $nav-color: #333;
   -o-transform: none;
   transform: none;
   position: fixed;
-  width: 0;  
+  width: 0;
   height: 100%;
 }
 
@@ -40,17 +40,16 @@ $nav-color: #333;
   margin-top: 1rem;
   margin-left: 1rem;
   font-size: 3rem;
-  color: $nav-color;
   transition: all .25s ease-in-out;
 
-  &:focus {
-    color: $nav-color;
-  }
-  
-  &:hover {
-    color: lighten($nav-color, 35%);
-    transition: all .25s ease-in-out;
-  }
+  // &:focus {
+  //   color: $nav-color;
+  // }
+
+  // &:hover {
+  //   color: lighten($nav-color, 35%);
+  //   transition: all .25s ease-in-out;
+  // }
 }
 
 .ad-block {
