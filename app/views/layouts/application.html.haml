@@ -17,10 +17,29 @@
     = csrf_meta_tags
 
   %body
-    %header
-      = render 'layouts/navbar'
-      .row
-        = render 'layouts/flash'
-    = yield
-    = javascript_include_tag "application"
-  = render 'layouts/footer'
+    .off-canvas-wrap.move-right{"data-offcanvas" => ""}
+      .inner-wrap
+        %aside.left-off-canvas-menu
+          .icon-bar.vertical.five-up
+            %a.item
+              %i.fi-home
+              %label Home
+            %a.item
+              %i.fi-braille
+              %label Menu
+            %a.item
+              %i.fi-torsos
+              %label Events
+            %a.item
+              %i.fi-heart
+              %label About
+            %a.item
+              %i.fi-mail
+              %label Contact
+        %header
+          = render 'layouts/navbar'
+          .row
+            = render 'layouts/flash'
+        = yield
+        = javascript_include_tag "application"
+      = render 'layouts/footer'
