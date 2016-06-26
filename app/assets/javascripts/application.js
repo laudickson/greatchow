@@ -20,7 +20,6 @@
 
 $(function(){ $(document).foundation(); });
 
-<<<<<<< HEAD
 function sideNav() {
   if ($(window).width() < 769) {
     $('.off-canvas-wrap').removeClass('move-right');
