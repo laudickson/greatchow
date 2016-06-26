@@ -21,7 +21,7 @@
 $(function(){ $(document).foundation(); });
 
 function sideNav() {
-  if ($(window).width() < 769) {
+  if ($(window).width() < 642) {
     $('.off-canvas-wrap').removeClass('move-right');
     $('.left-off-canvas-toggle').show();
   } else {
@@ -33,6 +33,7 @@ function sideNav() {
 $(window).resize(function() {
   sideNav();
 });
+
 $(function(){
   $('#event-table').tablesorter({ sortList: [[1,0]] });
 });
