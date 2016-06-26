@@ -28,13 +28,11 @@ function sideNav() {
   } else {
     $('.off-canvas-wrap').addClass('move-right');
     $('.left-off-canvas-toggle').hide();
-  }  
+  }
 }
 
 $(window).resize(function() {
   sideNav();
-=======
 $(function(){
   $('#event-table').tablesorter({ sortList: [[1,0]] });
->>>>>>> 1e52314027052cf81fbdf1444e7cac0eef4ecf56
 });
