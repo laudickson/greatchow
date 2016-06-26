@@ -27,11 +27,10 @@
 @import 'sidebar';
 
 html, body{
-  height: 110%;
   background: #6d0019; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #1b0b05 20%, #5a2511 72%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #1b0b05 20%, #5a2511 72%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(-45deg, #1b0b05 20%, #5a2511 72%) fixed; /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1b0b05 20%, #5a2511 72%) fixed; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   @media screen and (min-width: 641px){
     padding-left: 3rem;
   }
