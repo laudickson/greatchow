@@ -1,0 +1,17 @@
+.row
+  .small-12.small-centered.columns
+    .imageborder
+      .event-image1
+
+- @events.each do |event|
+  .row
+    .small-8.small-centered.columns
+      .event-title
+        %p= event.event_title
+  .row
+    .small-8.small-centered.columns
+      .event-body
+        %p= event.body
+  %br
+  %br
+  %br

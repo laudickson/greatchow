@@ -3,3 +3,76 @@
   background-size: cover;
   height: 50vh;
 }
+
+.event-title{
+  background: #3b1d12;
+  border: solid white 2px;
+  position: relative;
+  text-align: center;
+
+  p{
+    color: white;
+    position: relative;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
+  @media screen and (max-width: 3000px){
+    p{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 800px){
+    p{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    p{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 350px){
+    p{
+      font-size: 10px;
+    }
+  }
+}
+.event-body{
+  background: #3b1d12;
+  border: solid white 2px;
+  position: relative;
+  text-align: center;
+
+  p{
+    color: white;
+    position: relative;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
+  @media screen and (max-width: 3000px){
+    p{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 800px){
+    p{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    p{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 350px){
+    p{
+      font-size: 10px;
+    }
+  }
+}
+
+textarea#message_area{
+  height: 30rem;
+}

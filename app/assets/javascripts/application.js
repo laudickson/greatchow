@@ -15,10 +15,12 @@
 //= require foundation
 //= require jquery.slick
 //= require initialize
+//= require jquery-tablesorter
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
 
+<<<<<<< HEAD
 function sideNav() {
   if ($(window).width() < 769) {
     $('.off-canvas-wrap').removeClass('move-right');
@@ -31,4 +33,8 @@ function sideNav() {
 
 $(window).resize(function() {
   sideNav();
+=======
+$(function(){
+  $('#event-table').tablesorter({ sortList: [[1,0]] });
+>>>>>>> 1e52314027052cf81fbdf1444e7cac0eef4ecf56
 });

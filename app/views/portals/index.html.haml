@@ -1,0 +1,30 @@
+%br
+%span
+  = link_to "Write a new Event", new_event_path, class: "button success"
+
+%span
+  = link_to "Event Page", events_path, class: "button secondary"
+
+.row
+  .small-10.small-centered.columns
+    #event-list
+      %h1= "List of events"
+      %table#event-table{cellspacing: "0", cellpadding: "0"}
+        %thead
+          %tr
+            %th Article Title
+            %th Summary
+            %th Date Created
+            %th Action
+        %tbody
+          -@events.each do |event|
+            %tr
+              %td.lalign= "#{event.event_title}"
+              %td= "#{event.body[0..40]}"
+              %td= "#{event.created_at}"
+              %td
+                %ul.inline-list
+                  %li
+                    =link_to 'Edit', edit_event_path(event), class: 'button success tiny'
+                  %li
+                    =link_to 'Delete', event_path(event), method: :delete, data: { confirm: "Are you sure you want to delete this event?" }, class: 'button alert tiny'

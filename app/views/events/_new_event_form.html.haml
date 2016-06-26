@@ -1,0 +1,10 @@
+= form_for(@event) do |f|
+  .row
+    .field.small-10.columns
+      = f.text_field :event_title, placeholder: "Title"
+  .row
+    .field.small-10.columns
+      = f.text_area :body, id: "message_area", placeholder: "Description"
+  .row
+    .field.small-10.columns
+      = f.submit class: "button success small"

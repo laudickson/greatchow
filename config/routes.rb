@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
   devise_for :admins
-  root to: "home#index"
+  root to: "homes#index"
 
-  resources :about, only: :index
-  resources :menu, only: :index
-  resources :event, only: :index
-  resources :contact, only: :index
-  resources :reward, only: :index
-  resources :portal, only: :index
+  resources :abouts, only: :index
+  resources :menus, only: :index
+  resources :events, only: :index
+  resources :contacts, only: :index
+  resources :rewards, only: :index
+  resources :portals, only: :index
 
+  authenticate :admin do
+    resources :events, only: [:new, :create, :update, :edit, :destroy]
+  end
 end
