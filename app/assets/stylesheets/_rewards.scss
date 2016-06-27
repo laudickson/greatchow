@@ -1,0 +1,89 @@
+#rewardpic{
+  padding-top: 9rem;
+}
+
+.rewards-image1{
+  background: url('/assets/reward_img1.jpg');
+  background-size: cover;
+  height: 50vh;
+}
+.rewards-image2{
+  background: url('/assets/reward_img3.jpg') center;
+  background-size: cover;
+  height: 47vh;
+}
+
+.rewardsblurb{
+  background: #3b1d12;
+  border: solid white 2px;
+  height: 75vh;
+  position: relative;
+  text-align: center;
+
+  p{
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  ul{
+    color: white;
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 3000px){
+    p{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 975px){
+    ul{
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 825px){
+    p{
+      font-size: 16px;
+    }
+
+    ul{
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 715px){
+    ul{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 440px){
+    p{
+      font-size: 11px;
+    }
+
+    ul{
+      font-size: 9px;
+    }
+  }
+  @media screen and (max-width: 380px){
+    p{
+      font-size: 10px;
+    }
+
+    ul{
+      font-size: 8px;
+    }
+  }
+  @media screen and (max-width: 325px){
+    p{
+      font-size: 9px;
+    }
+
+    ul{
+      font-size: 7px;
+    }
+  }
+}

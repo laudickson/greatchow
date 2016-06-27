@@ -14,6 +14,16 @@
 
   ul{
     display: inline-block;
+    @media screen and (max-width: 955px){
+      display: block;
+    }
+    a{
+      background-color: #6d0019;
+    }
+    a:hover{
+      transition: background-color 1s ease;
+      background-color: #e67300;
+    }
   }
 
   p{
