@@ -29,9 +29,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 html, body{
-  background: #6d0019; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #1b0b05 20%, #5a2511 72%) fixed; /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #1b0b05 20%, #5a2511 72%) fixed; /* Chrome10-25,Safari5.1-6 */
+  background: #1b0b05; /* Old browsers */
   background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   @media screen and (min-width: 641px){

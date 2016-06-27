@@ -1,0 +1,19 @@
+.row
+  .small-8.small-centered.columns
+    %p Contact Us! Please fill out the form and we will get back to you as soon as possible.
+
+.row
+  .small-8.small-centered.columns
+    = form_for(@contact) do |f|
+      .row
+        .field.small-10.columns
+          = f.text_field :name, required: true, placeholder: 'Name'
+      .row
+        .field.small-10.columns
+          = f.email_field :email, required: true, placeholder: 'E-mail'
+      .row
+        .field.small-10.columns
+          = f.text_area :message, required: true, placeholder: 'Message', id: 'contactmessage'
+      .row
+        .field.small-10.columns
+          = f.submit 'Send Message', class: 'button radius success'

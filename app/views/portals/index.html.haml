@@ -1,14 +1,15 @@
 %br
-%span
-  = link_to "Write a new Event", new_event_path, class: "button success"
+.row
+  %span
+    = link_to "Write a new Event", new_event_path, class: "button success"
 
-%span
-  = link_to "Event Page", events_path, class: "button secondary"
+  %span
+    = link_to "Event Page", events_path, class: "button secondary"
 
 .row
   .small-10.small-centered.columns
     #event-list
-      %h1= "List of events"
+      %h1{style: "color: white;"}= "List of events"
       %table#event-table{cellspacing: "0", cellpadding: "0"}
         %thead
           %tr
