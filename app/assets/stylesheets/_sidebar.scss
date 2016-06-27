@@ -1,5 +1,4 @@
 $sidebar-width: 90px;
-// $nav-color: #333;
 
 .inner-wrap {
   width: auto;
@@ -41,15 +40,6 @@ $sidebar-width: 90px;
   margin-left: 1rem;
   font-size: 3rem;
   transition: all .25s ease-in-out;
-
-  // &:focus {
-  //   color: $nav-color;
-  // }
-
-  // &:hover {
-  //   color: lighten($nav-color, 35%);
-  //   transition: all .25s ease-in-out;
-  // }
 }
 
 .ad-block {

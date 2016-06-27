@@ -27,8 +27,12 @@
 }
 
 #mediumnav{
-  padding-top: 5rem;
-  background: #6d0019;
+  padding-top: 9rem;
+  background: #540013;
+  a:hover{
+    transition: background-color 1s ease;
+    background-color: #e67300;
+  }
 }
 #logo{
   width: 20rem;
