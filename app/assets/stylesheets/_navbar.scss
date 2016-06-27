@@ -17,6 +17,9 @@
 #mobile-logo{
   float: left;
   width: 10rem;
+  background: image-url('greatchowlogo.jpg');
+  background-size: cover;
+  height: 10vh;
 }
 
 //medium up nav
@@ -36,6 +39,9 @@
 }
 #logo{
   width: 20rem;
+  background: image-url('greatchowlogo.jpg');
+  background-size: cover;
+  height: 12vh;
 }
 
 #nav-list{
