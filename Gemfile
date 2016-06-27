@@ -15,6 +15,7 @@ gem "jquery-slick-rails", '>= 1.5.8.2'
 gem 'jquery-tablesorter'
 gem 'mail_form'
 gem 'simple_form'
+gem 'rails_12factor', group: :production
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
