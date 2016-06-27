@@ -3,12 +3,12 @@
 }
 
 .rewards-image1{
-  background: url('/assets/reward_img1.jpg');
+  background: image-url('reward_img1.jpg');
   background-size: cover;
   height: 50vh;
 }
 .rewards-image2{
-  background: url('/assets/reward_img3.jpg') center;
+  background: image-url('reward_img3.jpg') center;
   background-size: cover;
   height: 47vh;
 }
