@@ -6,14 +6,14 @@
   .small-8.small-centered.columns
     = form_for(@contact) do |f|
       .row
-        .field.small-10.columns
+        .field.small-12.columns
           = f.text_field :name, required: true, placeholder: 'Name'
       .row
-        .field.small-10.columns
+        .field.small-12.columns
           = f.email_field :email, required: true, placeholder: 'E-mail'
       .row
-        .field.small-10.columns
+        .field.small-12.columns
           = f.text_area :message, required: true, placeholder: 'Message', id: 'contactmessage'
       .row
-        .field.small-10.columns
+        .field.small-12.columns
           = f.submit 'Send Message', class: 'button radius success'

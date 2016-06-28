@@ -22,6 +22,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'pry-rails'
   gem 'byebug'
+  gem 'foreman'
 end
 
 group :development do

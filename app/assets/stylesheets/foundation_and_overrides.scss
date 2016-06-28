@@ -139,6 +139,7 @@ $tuatara     : #444444;
 $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
+$great-chow-red: #540013;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -671,7 +672,7 @@ $f-dropdown-list-padding: rem-calc(5, 15);
 // We use this to style the glowing effect of inputs when focused
 // $input-include-glowing-effect: true;
 // $glowing-effect-fade-time: 0.45s;
-// $glowing-effect-color: $input-focus-border-color;
+// $glowing-effect-color: $great-chow;
 
 // Select variables
 // $select-bg-color: $ghost;
