@@ -1,4 +1,4 @@
-# source code for great-chow.com
+# great-chow.com
 
 ----
 ### Inspirations:
@@ -21,3 +21,4 @@ Currently only works in development.
 
 2. run `bundle install`
 3. `foreman start` (instead of `rails s`)
+4. send all da emails
