@@ -1,5 +1,5 @@
 # great-chow.com
-
+https://gist.github.com/jscho13/e14fb70dc9daf0217482c83149b1df6d
 
 ----
 ### Inspirations:
@@ -9,6 +9,8 @@
 - http://www.vedatakeout.com/
 - http://www.caferouge.com/   <-- imo the images are too large in this picture
 - http://www.ginger-restaurant.co.za/
+- http://www.bensonsnyc.com/
+- http://thegreektribeca.com/#traditionalgreek   <-- these guys legit copied materialize css. guess we could too?
 
 ----
 ### Email:
