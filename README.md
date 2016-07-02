@@ -22,6 +22,10 @@ Currently only works in development.
         GMAIL_USERNAME=example@gmail.com
         GMAIL_PASSWORD=ExamplePassword
 
-2. run `bundle install`
-3. `foreman start` (instead of `rails s`)
-4. send all da emails
+2. Create a Procfile
+
+        web: bundle exec rails s
+
+3. run `bundle install`
+4. `foreman start` (instead of `rails s`)
+5. send all da emails
