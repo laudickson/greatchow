@@ -21,6 +21,7 @@
       = render 'layouts/navbar'
       .row
         = render 'layouts/flash'
-    = yield
+    %div#content_wrapper
+      = yield
     = javascript_include_tag "application"
   = render 'layouts/footer'
