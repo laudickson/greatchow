@@ -4,6 +4,17 @@
       .menu-image1
 
 .row
+  .small-8.small-centered.columns
+    .takeoutmenu
+      %p
+        Great Chow offers take-out and delivery from both locations. Please click on the take out menu below to download a copy.
+      %ul.inline-list
+        %li
+          =link_to 'Abington Takeout Menu', asset_path("abingtontakeoutmenu.pdf", format: :pdf), class: 'button radius'
+        %li
+          =link_to 'Quincy Wollaston Takeout Menu', asset_path("wollastontakeoutmenu.pdf", format: :pdf), class: 'button radius'
+
+.row
   .small-6.columns
     .imageborder
       .menu-image2
@@ -21,14 +32,3 @@
   .small-6.columns
     .imageborder
       .menu-image3
-
-.row
-  .small-8.small-centered.columns
-    .takeoutmenu
-      %p
-        Great Chow offers take-out and delivery from both locations. Please click on the take out menu below to download a copy.
-      %ul.inline-list
-        %li
-          =link_to 'Abington Takeout Menu', asset_path("abingtontakeoutmenu.pdf", format: :pdf), class: 'button radius'
-        %li
-          =link_to 'Quincy Wollaston Takeout Menu', asset_path("wollastontakeoutmenu.pdf", format: :pdf), class: 'button radius'
