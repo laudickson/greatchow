@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:index, :new, :create]
   resources :rewards, only: :index
   resources :portals, only: :index
+  resources :press, only: :index
 
   match '/contacts', to: 'contacts#new', via: 'get', :as => :contact
 
