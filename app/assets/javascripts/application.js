@@ -29,6 +29,13 @@ $(window).resize(function() {
 });
 
 // below function causes "fade out"
+// https://css-tricks.com/forums/topic/fade-out-between-pages/page/2/
+$(document).ready(function() {
+  $('#content_wrapper').css('display', 'none');
+  $('#content_wrapper').fadeIn(1000);
+});
+
+// below function causes "fade out"
 // http://stackoverflow.com/questions/19397515/fading-out-a-whole-page-with-jquery
 $(document).on("click", "a", function () {
   var newUrl = $(this).attr("href");
