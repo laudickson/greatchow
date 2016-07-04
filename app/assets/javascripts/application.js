@@ -31,7 +31,7 @@ $(window).resize(function() {
 // below function causes "fade out"
 // https://css-tricks.com/forums/topic/fade-out-between-pages/page/2/
 $(document).ready(function() {
-  $('#content_wrapper').css('display', 'none');
+  $('#content_wrapper').css('visibility', 'visible').hide();
   $('#content_wrapper').fadeIn(1000);
 });
 
