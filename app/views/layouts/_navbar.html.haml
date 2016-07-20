@@ -1,59 +1,47 @@
 .hide-for-small-only
-  .row#navlogo
-    .small-3.small-centered.columns
-      #logo
-  .off-canvas-wrap.move-right{"data-offcanvas" => ""}
-    .inner-wrap
-      %aside.left-off-canvas-menu
-        .icon-bar.vertical#mediumnav
-          %a.item{ href: '/'}
-            %i.fi-home
-            %label Home
-          %a.item{ href: '/abouts'}
-            %i.fi-heart
-            %label About
-          %a.item{ href: '/menus'}
-            %i.fi-braille
-            %label Menu
-          %a.item{ href: '/events'}
-            %i.fi-page-multiple
-            %label Events
-          %a.item{ href: '/gallery'}
-            %i.fi-torsos-all
-            %label Gallery
-          %a.item{ href: '/press'}
-            %i.fi-social-instagram
-            %label Press
-          %a.item{ href: '/contacts'}
-            %i.fi-mail
-            %label Contact
-
-.show-for-small-only
-  .row
-    .small-3.columns
-      #mobile-logo
-    .small-3.columns
-      %a{ 'data-dropdown' => 'drop1', 'aria-controls' => 'drop1', 'aria-expanded' => 'false'}
-        %i.fi-list
-      %ul#drop1.f-dropdown{ 'data-dropdown-content' => 'true', 'aria-hidden' => 'true'}
-        %li
-          %a{ href: '/' }Home
-        %li
-          %a{ href: '/menus' }Menu
-        %li
-          %a{ href: '/events' }Events
-        %li
-          %a{ href: '/abouts' }About
-        %li
-          %a{ href: '/contacts' }Contact
-        -if current_admin
-          %li.has-dropdown
-            %a{ href: '#' }
-              %i.fi-lock
-            %ul.dropdown
-              %li
-                %a{ href: '/admins/edit'}Settings
-              %li
-                = link_to "Sign Out", destroy_admin_session_path, method: :delete
-              %li
-                = link_to "PORTAL", portals_path
+  #navSidebar
+    %a{href: '/'}
+      %i.fi-home
+      %label Home
+    %a{ href: '/menus'}
+      %i.fi-braille
+      %label Menu
+    %a{ href: '/events'}
+      %i.fi-page-multiple
+      %label Events
+    %a{ href: '/press'}
+      %i.fi-social-instagram
+      %label Press
+    %a{ href: '/contacts'}
+      %i.fi-mail
+      %label Contact
+-#
+-# .show-for-small-only
+-#   .row
+-#     .small-3.columns
+-#       #mobile-logo
+-#     .small-3.columns
+-#       %a{ 'data-dropdown' => 'drop1', 'aria-controls' => 'drop1', 'aria-expanded' => 'false'}
+-#         %i.fi-list
+-#       %ul#drop1.f-dropdown{ 'data-dropdown-content' => 'true', 'aria-hidden' => 'true'}
+-#         %li
+-#           %a{ href: '/' }Home
+-#         %li
+-#           %a{ href: '/menus' }Menu
+-#         %li
+-#           %a{ href: '/events' }Events
+-#         %li
+-#           %a{ href: '/abouts' }About
+-#         %li
+-#           %a{ href: '/contacts' }Contact
+-#         -if current_admin
+-#           %li.has-dropdown
+-#             %a{ href: '#' }
+-#               %i.fi-lock
+-#             %ul.dropdown
+-#               %li
+-#                 %a{ href: '/admins/edit'}Settings
+-#               %li
+-#                 = link_to "Sign Out", destroy_admin_session_path, method: :delete
+-#               %li
+-#                 = link_to "PORTAL", portals_path

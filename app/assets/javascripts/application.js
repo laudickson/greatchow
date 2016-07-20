@@ -24,13 +24,24 @@ $(function(){
   $('#event-table').tablesorter({ sortList: [[1,0]] });
 });
 
-$(window).resize(function() {
-  sideNav();
-});
+// $(window).resize(function() {
+//   sideNav();
+// });
+
+// below function causes "fade in" nav triggered on scroll
 
 // below function causes "fade out"
 // https://css-tricks.com/forums/topic/fade-out-between-pages/page/2/
 $(document).ready(function() {
+  $(window).scroll(function(){
+    if ($(this).scrollTop()>500){
+      $('#navSidebar').css('visibility', 'visible');
+      $('#navSidebar').fadeIn(800);
+    } else{
+      $('#navSidebar').fadeOut(800);
+    }
+  });
+
   $('#content_wrapper').css('visibility', 'visible').hide();
   $('#content_wrapper').fadeIn(1000);
 });
