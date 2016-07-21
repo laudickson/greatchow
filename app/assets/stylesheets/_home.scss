@@ -53,10 +53,9 @@
 #homeContentImage1{
   position:relative;
   background: image-url('home_content_img1.jpg') fixed;
-  background-size: cover;
+  background-size: 100vw auto;
   min-height:70vh;
   opacity: 0.8;
-  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -64,9 +63,8 @@
 #homeContentImage2{
   position:relative;
   background: image-url('home_content_img2.jpg') fixed;
-  background-size: cover;
+  background-size: 100vw auto;
   min-height: 70vh;
-  height: 70vh;
   opacity: 0.8;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,9 +73,8 @@
 #homeContentImage3{
   position:relative;
   background: image-url('home_content_img3.jpg') fixed;
-  background-size: cover;
+  background-size: 100vw auto;
   min-height: 70vh;
-  height: 70vh;
   opacity: 0.8;
   background-position: center;
   background-repeat: no-repeat;

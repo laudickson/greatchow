@@ -67,16 +67,16 @@ html, body{
 
 #homeSlideImage1 {
   background: image-url('home_slide_img1.jpg');
-	background-size: cover;
+	background-size: 100vw auto;
   height: 100vh;
 }
 #homeSlideImage2{
   background: image-url('home_slide_img2.jpg');
-	background-size: cover;
+	background-size: auto 100vh;
   height: 100vh;
 }
 #homeSlideImage3{
   background: image-url('home_slide_img3.jpg');
-	background-size: cover;
+	background-size: auto 100vh;
   height: 100vh;
 }
