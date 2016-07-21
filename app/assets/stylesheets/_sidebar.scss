@@ -49,8 +49,7 @@
 #navSidebar{
   height: 100%;
   width: 100px;
-  visibility: hidden;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   position: fixed;

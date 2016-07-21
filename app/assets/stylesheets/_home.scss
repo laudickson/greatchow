@@ -1,0 +1,84 @@
+#homeLogo{
+  position: absolute;
+  display: none;
+  height: 30vh;
+  width: 40vw;
+  top: 0;
+  margin-left: 12vw;
+  margin-top: 30vh;
+  background: image-url('gc-logo-white.png');
+  opacity: 0.85;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#homeCaption{
+  position: absolute;
+  display: none;
+  height: 30vh;
+  width: 30vw;
+  top: 0;
+  margin-left: 60vw;
+  margin-top: 60vh;
+
+  h1{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+
+  h5{
+    color: silver;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+.home-blurb{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+  overflow:visible;
+
+  h2, h4{
+    font-family: 'Raleway', sans-serif;
+    color: silver;
+  }
+  span{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+#homeContentImage1{
+  position:relative;
+  background: image-url('home_content_img1.jpg') fixed;
+  background-size: cover;
+  min-height:70vh;
+  opacity: 0.8;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#homeContentImage2{
+  position:relative;
+  background: image-url('home_content_img2.jpg') fixed;
+  background-size: cover;
+  min-height: 70vh;
+  height: 70vh;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#homeContentImage3{
+  position:relative;
+  background: image-url('home_content_img3.jpg') fixed;
+  background-size: cover;
+  min-height: 70vh;
+  height: 70vh;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+}
