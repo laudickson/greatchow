@@ -23,7 +23,6 @@
 @import 'event';
 @import 'about';
 @import 'contact';
-@import 'navbar';
 @import 'sidebar';
 @import 'rewards';
 @import url(https://fonts.googleapis.com/css?family=Raleway);
@@ -31,10 +30,6 @@
 html, body{
   background: #1b0b05; /* Old browsers */
   background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-  @media screen and (min-width: 641px){
-    padding-left: 3rem;
-  }
 
   p{
     font-family: 'Raleway', sans-serif;
