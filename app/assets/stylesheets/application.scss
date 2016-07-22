@@ -17,15 +17,16 @@
  */
 
 @import 'foundation_and_overrides';
-@import 'slick';
-@import 'slick-theme';
 @import 'menu';
 @import 'event';
-@import 'about';
 @import 'contact';
 @import 'sidebar';
 @import 'rewards';
+@import 'home';
+@import 'slick';
+@import 'slick-theme';
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:700);
 
 html, body{
   background: #1b0b05; /* Old browsers */
@@ -57,32 +58,25 @@ html, body{
   }
 }
 
-.imageborder{
-  border: 2px solid white;
+//--- Sliding Images ---//
+
+.home-intro{
+  position: relative;
+  height: 100vh;
 }
 
-.slidingimage1 {
-  background: image-url('home_img1.jpg');
-	background-size: cover;
-  height: 50vh;
+#homeSlideImage1 {
+  background: image-url('home_slide_img1.jpg');
+	background-size: 100vw auto;
+  height: 100vh;
 }
-.slidingimage2{
-  background: image-url('home_img2.jpg');
-	background-size: cover;
-  height: 50vh;
+#homeSlideImage2{
+  background: image-url('home_slide_img2.jpg');
+	background-size: auto 100vh;
+  height: 100vh;
 }
-.slidingimage3{
-  background: image-url('home_img3.jpg');
-	background-size: cover;
-  height: 50vh;
-}
-.slidingimage4{
-  background: image-url('home_img4.jpg');
-	background-size: cover;
-  height: 50vh;
-}
-.slidingimage5{
-  background: image-url('home_img5.jpg');
-	background-size: cover;
-  height: 50vh;
+#homeSlideImage3{
+  background: image-url('home_slide_img3.jpg');
+	background-size: auto 100vh;
+  height: 100vh;
 }

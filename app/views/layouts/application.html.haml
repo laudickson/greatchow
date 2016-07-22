@@ -1,10 +1,10 @@
 !!!
 %html
   %head
-    %title Great Chow Mandarin Chinese Food
+    %title Meet Friends, Eat Fresh, Great Chow - an innovative local Asian restaurant serving the finest Asian-fusion
 
     %meta{ property: "name", content: "Great Chow"}
-    %meta{ property: "description", content: "Meet Friends, Eat Fresh, Great Chow - an innovative local Asian restaurant serving the finest Asian-fusion"}
+    %meta{ property: "description", content: "Great Chow - an innovative local Asian restaurant serving the finest Asian-fusion"}
     %meta{ property: "keywords", content: "chinese food, japanese food, sushi, great chow, restaurant, cuisine, abington, massachusetts, quincy, south shore, asian fusion"}
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0"}
     %meta{ charset: "utf-8"}
@@ -21,7 +21,6 @@
       = render 'layouts/navbar'
       .row
         = render 'layouts/flash'
-    %div#content_wrapper
-      = yield
+    = yield
     = javascript_include_tag "application"
   = render 'layouts/footer'
