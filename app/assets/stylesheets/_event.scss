@@ -1,7 +1,23 @@
-.event-image1{
-  background: image-url('event_img.jpg');
+#eventContentImage1{
+  position:relative;
+  background: image-url('event_img1.jpg') fixed;
   background-size: cover;
-  height: 50vh;
+  max-width: 100%;
+  min-height:80vh;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#eventContentImage2{
+  position:relative;
+  background: image-url('event_img2.jpg') fixed;
+  background-size: cover;
+  max-width: 100%;
+  min-height:50vh;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .event-title{
@@ -10,67 +26,25 @@
   position: relative;
   text-align: center;
 
-  p{
+  h2{
+    font-family: 'Raleway', sans-serif;
     color: white;
-    position: relative;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 3%;
-  }
-  @media screen and (max-width: 3000px){
-    p{
-      font-size: 20px;
-    }
-  }
-  @media screen and (max-width: 800px){
-    p{
-      font-size: 16px;
-    }
-  }
-  @media screen and (max-width: 450px){
-    p{
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 350px){
-    p{
-      font-size: 10px;
-    }
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 .event-body{
   background: #3b1d12;
   border: dashed white 1px;
   border-top: none;
-  position: relative;
-  text-align: center;
+  margin-bottom: 7%;
+  text-align: left;
 
   p{
-    color: white;
+    color: #f4f4f4;
     position: relative;
-    padding-right: 3%;
     padding-left: 3%;
-    padding-top: 3%;
-  }
-  @media screen and (max-width: 3000px){
-    p{
-      font-size: 20px;
-    }
-  }
-  @media screen and (max-width: 800px){
-    p{
-      font-size: 16px;
-    }
-  }
-  @media screen and (max-width: 450px){
-    p{
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 350px){
-    p{
-      font-size: 10px;
-    }
+    padding-top: 1%;
   }
 }
 

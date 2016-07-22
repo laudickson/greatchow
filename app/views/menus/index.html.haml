@@ -1,34 +1,18 @@
-.row
-  .small-12.small-centered.columns
-    .imageborder
-      .menu-image1
-
-.row
-  .small-8.small-centered.columns
-    .takeoutmenu
-      %p
-        Great Chow offers take-out and delivery from both locations. Please click on the take out menu below to download a copy.
-      %ul.inline-list
-        %li
-          =link_to 'Abington Takeout Menu', asset_path("abingtontakeoutmenu.pdf", format: :pdf), class: 'button radius'
-        %li
-          =link_to 'Quincy Wollaston Takeout Menu', asset_path("wollastontakeoutmenu.pdf", format: :pdf), class: 'button radius'
-
-.row
-  .small-6.columns
-    .imageborder
-      .menu-image2
-  .small-6.columns
-    .menublurb
-      %p
-        You'll find people from all walks of life frequenting Great Chow for one common reason: they all come for the "Great Chow".
-        They all know that the freshest and highest quality ingredients are mandates of the menu and that friendly and attentive service is always the top priority.
-
-.row
-  .small-6.columns
-    .menublurb
-      %p
-        At Great Chow, it isn't only about eating out; it's about having an outstanding time and a great meal in one package. It's an overall experience we think you'll agree is absolutely priceless.
-  .small-6.columns
-    .imageborder
-      .menu-image3
+%section#menuContentImage1{data: {type: 'background', speed: '5'}}
+.blurb.row
+  .medium-6.columns
+    <h3>People from all walks of life frequent inside for one common reason: they all come for the <span>Great Chow</span>.</h3>
+  .medium-6.columns
+    <h3>They all know that the most <span>natural</span> ingredients are mandates of the menu and <span>attentive</span> service is top priority.</h3>
+%section#menuContentImage2{data: {type: 'background', speed: '4'}}
+.blurb.row
+  .medium-10.columns.medium-centered
+    <h3><span>Great Chow</span> offers take-out from both locations. Please click on a menu below to download a copy.</h3>
+  .row
+    .medium-9.columns.medium-centered
+      .takeout-menu
+        =link_to 'Abington Takeout Menu', asset_path("abingtontakeoutmenu.pdf", format: :pdf), class: 'button large radius', style: 'border: solid silver 1px;'
+        =link_to 'Quincy Wollaston Takeout Menu', asset_path("wollastontakeoutmenu.pdf", format: :pdf), class: 'button large radius', style: 'border: solid silver 1px;'
+  .medium-10.columns.medium-centered
+    <h3 style = 'color: white;'>Bon Appétit!</h3>
+%section#menuContentImage3{data: {type: 'background', speed: '6'}}

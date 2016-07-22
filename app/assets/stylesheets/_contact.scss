@@ -1,19 +1,23 @@
-.contact-image1{
-  background: image-url('contact_img.jpg');
+#contactContentImage1{
+  position:relative;
+  background: image-url('contact_img1.jpg') fixed;
   background-size: cover;
-  height: 50vh;
+  max-width: 100%;
+  min-height:85vh;
+  opacity: 0.8;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .contactblurb{
   background: #3b1d12;
-  border: solid white 2px;
-  position: relative;
-  text-align: center;
+  border: solid white 1px;
+  text-align: left;
 
-  p{
+  p, h2{
+    font-family: 'Raleway', sans-serif;
     color: white;
     position: relative;
-    padding-right: 3%;
     padding-left: 3%;
     padding-top: 3%;
   }

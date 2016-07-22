@@ -1,89 +1,38 @@
-#rewardpic{
-  padding-top: 9rem;
+#rewardsContentImage1{
+  position:relative;
+  background: image-url('reward_img3.jpg') fixed;
+  background-size: cover;
+  max-width: 100%;
+  min-height:80vh;
+  opacity: 0.8;
+  background-repeat: no-repeat;
 }
 
-.rewards-image1{
-  background: image-url('reward_img1.jpg');
+#rewardsContentImage2{
+  position:relative;
+  background: image-url('reward_img1.jpg') fixed;
   background-size: cover;
-  height: 50vh;
-}
-.rewards-image2{
-  background: image-url('reward_img3.jpg') center;
-  background-size: cover;
-  height: 47vh;
+  max-width: 100%;
+  min-height:50vh;
+  opacity: 0.8;
+  background-repeat: no-repeat;
 }
 
 .rewardsblurb{
   background: #3b1d12;
-  border: solid white 2px;
-  height: 75vh;
-  position: relative;
-  text-align: center;
-
-  p{
-    color: white;
-    text-align: center;
-    position: relative;
-    padding-right: 3%;
-    padding-left: 3%;
-  }
+  border: dashed white 1px;
+  margin-bottom: 7%;
+  text-align: left;
+  padding-top: 2%;
 
   ul{
     color: white;
-    padding-right: 3%;
     padding-left: 3%;
     text-align: left;
-  }
+    font-family: 'Raleway', sans-serif;
 
-  @media screen and (max-width: 3000px){
-    p{
-      font-size: 20px;
-    }
-  }
-  @media screen and (max-width: 975px){
-    ul{
-      font-size: 14px;
-    }
-  }
-  @media screen and (max-width: 825px){
-    p{
-      font-size: 16px;
-    }
-
-    ul{
-      font-size: 14px;
-    }
-  }
-  @media screen and (max-width: 715px){
-    ul{
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 440px){
-    p{
-      font-size: 11px;
-    }
-
-    ul{
-      font-size: 9px;
-    }
-  }
-  @media screen and (max-width: 380px){
-    p{
-      font-size: 10px;
-    }
-
-    ul{
-      font-size: 8px;
-    }
-  }
-  @media screen and (max-width: 325px){
-    p{
-      font-size: 9px;
-    }
-
-    ul{
-      font-size: 7px;
+    li{
+      padding-bottom: 2%;
     }
   }
 }

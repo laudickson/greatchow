@@ -33,27 +33,11 @@
   }
 }
 
-.home-blurb{
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  text-align: center;
-  overflow:visible;
-
-  h2, h4{
-    font-family: 'Raleway', sans-serif;
-    color: silver;
-  }
-  span{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: bold;
-  }
-}
-
 #homeContentImage1{
   position:relative;
   background: image-url('home_content_img1.jpg') fixed;
-  background-size: 100vw auto;
+  background-size: cover;
+  max-width: 100%;
   min-height:70vh;
   opacity: 0.8;
   background-position: center;
@@ -63,7 +47,8 @@
 #homeContentImage2{
   position:relative;
   background: image-url('home_content_img2.jpg') fixed;
-  background-size: 100vw auto;
+  background-size: cover;
+  max-width: 100%;
   min-height: 70vh;
   opacity: 0.8;
   background-position: center;
@@ -73,8 +58,9 @@
 #homeContentImage3{
   position:relative;
   background: image-url('home_content_img3.jpg') fixed;
-  background-size: 100vw auto;
-  min-height: 70vh;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 80vh;
   opacity: 0.8;
   background-position: center;
   background-repeat: no-repeat;

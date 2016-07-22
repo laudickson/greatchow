@@ -26,35 +26,36 @@
 @import 'slick';
 @import 'slick-theme';
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:700);
 
 html, body{
   background: #1b0b05; /* Old browsers */
   background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
 
-  p{
+.blurb{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+  overflow:visible;
+
+  h3, h4{
     font-family: 'Raleway', sans-serif;
+    color: #c2c2c2;
+  }
+  span{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
   }
 }
 
 .footer{
-  p{
+  margin-top: 5vh;
+  margin-left: 8%;
+  margin-bottom: 3vh;
+  h6{
+    font-family: 'Raleway', sans-serif;
     color: white;
-  }
-  @media screen and (max-width: 3000px){
-    p{
-      font-size: 14px;
-    }
-  }
-  @media screen and (max-width: 800px){
-    p{
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 450px){
-    p{
-      font-size: 10px;
-    }
   }
 }
 
@@ -67,16 +68,20 @@ html, body{
 
 #homeSlideImage1 {
   background: image-url('home_slide_img1.jpg');
-	background-size: 100vw auto;
+	background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 #homeSlideImage2{
   background: image-url('home_slide_img2.jpg');
-	background-size: auto 100vh;
+	background-size: cover;
+  max-width: 100%;
   height: 100vh;
 }
 #homeSlideImage3{
   background: image-url('home_slide_img3.jpg');
-	background-size: auto 100vh;
+	background-size: cover;
+  max-width: 100%;
   height: 100vh;
 }
