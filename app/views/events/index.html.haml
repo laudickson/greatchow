@@ -1,17 +1,14 @@
-.row
-  .small-12.small-centered.columns
-    .imageborder
-      .event-image1
-
+%section#eventContentImage1{data: {type: 'background', speed: '5'}}
+.blurb.row
+  .medium-10.columns.medium-centered
+    <h3> Please read on for the <span>latest news</span> and <span>upcoming events</span>. There's always something happening at the <span>Great Chow</span>! </h3>
 - @events.each do |event|
   .row
-    .small-8.small-centered.columns
+    .medium-10.medium-centered.columns
       .event-title
-        %p= event.event_title
+        %h2= event.event_title
   .row
-    .small-8.small-centered.columns
+    .medium-10.medium-centered.columns
       .event-body
         %p= simple_format(event.body)
-  %br
-  %br
-  %br
+%section#eventContentImage2{data: {type: 'background', speed: '5'}}

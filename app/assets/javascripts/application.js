@@ -39,7 +39,7 @@ $(document).ready(function() {
 
   //--- Fade Out sidenav on scroll ---//
   $(window).scroll(function(){
-    if ($(this).scrollTop()>500){
+    if ($(this).scrollTop()>200){
       $('#navSidebar').fadeIn(500);
       $('#navSidebar').css('display', 'flex');
     } else{
