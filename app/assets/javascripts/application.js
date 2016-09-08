@@ -31,10 +31,10 @@ $(document).ready(function() {
     collapsible: true,
     active: false,
     heightStyle: 'content',
-    animate: {
-      easing: "easeOutBounce",
-      duration: 700
-    }
+    // animate: {
+    //   easing: "easeOutBounce",
+    //   duration: 700
+    // }
   });
 
   //--- Slick carousel ---//

@@ -21,6 +21,8 @@ gem 'rails_12factor', group: :production
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
+  gem "better_errors"
+  gem "binding_of_caller"
   gem 'pry-rails'
   gem 'byebug'
   gem 'foreman'
