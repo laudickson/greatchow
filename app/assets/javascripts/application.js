@@ -30,11 +30,7 @@ $(document).ready(function() {
   $( "#eventIndex" ).accordion({
     collapsible: true,
     active: false,
-    heightStyle: 'content',
-    // animate: {
-    //   easing: "easeOutBounce",
-    //   duration: 700
-    // }
+    heightStyle: 'content'
   });
 
   //--- Slick carousel ---//

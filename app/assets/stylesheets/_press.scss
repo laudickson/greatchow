@@ -1,21 +1,7 @@
 #pressContentImage1{
-  position:relative;
-  background: image-url('press_img5.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:80vh;
-  opacity: 0.8;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  background-image: image-url('press_img5.jpg');
 }
 
 #pressContentImage2{
-  position:relative;
-  background: image-url('press_img1.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:55vh;
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url('press_img1.jpg');
 }

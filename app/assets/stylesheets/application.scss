@@ -12,7 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= require jquery-ui/accordion
  *= require foundation_and_overrides
 
  */
@@ -48,18 +47,31 @@ html, body{
     font-family: 'Raleway', sans-serif;
     color: #c2c2c2;
     font-weight: 300;
-    font-size: 1em;
 
     span{
       color: white;
       font-weight: bold;
     }
   }
+
+  h4{
+    font-size: .8em;
+  }
 }
 
 .footer{
-  margin-left: 8%;
+  margin-left: 10%;
   margin-bottom: 3%;
+
+  a{
+    color: orange;
+    font-weight: bold;
+    transition: color .5s ease-in-out 0s;
+
+    &:hover{
+      color: #FFFF4C;
+    }
+  }
 
   h6{
     font-family: 'Raleway', sans-serif;

@@ -1,21 +1,10 @@
 #rewardsContentImage1{
-  position:relative;
-  background: image-url('reward_img3.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
+  background-image: image-url('reward_img3.jpg');
   min-height:80vh;
-  opacity: 0.8;
-  background-repeat: no-repeat;
 }
 
 #rewardsContentImage2{
-  position:relative;
-  background: image-url('reward_img1.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:50vh;
-  opacity: 0.8;
-  background-repeat: no-repeat;
+  background-image: image-url('reward_img1.jpg');
 }
 
 .rewardsblurb{

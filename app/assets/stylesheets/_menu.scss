@@ -15,34 +15,13 @@
 }
 
 #menuContentImage1{
-  position:relative;
-  background: image-url('menu_img1.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:75vh;
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url('menu_img1.jpg');
 }
 
 #menuContentImage2{
-  position:relative;
-  background: image-url('menu_img2.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:70vh;
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url('menu_img2.jpg');
 }
 
 #menuContentImage3{
-  position:relative;
-  background: image-url('menu_img5.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:70vh;
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url('menu_img5.jpg');
 }
