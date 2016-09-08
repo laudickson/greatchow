@@ -27,7 +27,7 @@ $(document).ready(function() {
   //--- Foundation initializiation ---//
 
   //--- Slick carousel ---//
-  $('.image-slide').not('.slick-initialized').slick({
+  $('.homeSlider').not('.slick-initialized').slick({
       autoplay: true,
       autoplaySpeed: 2100,
       fade: true,
@@ -55,7 +55,7 @@ $(document).ready(function() {
            var yPos = -( ($window.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed'));
 
            // Put together our final background position
-           var coords = '50% '+ yPos + 'px';
+           var coords = '75% '+ yPos.toFixed(2) + 'px';
 
            // Move the background
            $bgobj.css({ backgroundPosition: coords });

@@ -25,11 +25,16 @@
 @import 'home';
 @import 'slick';
 @import 'slick-theme';
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
 
 html, body{
   background: #1b0b05; /* Old browsers */
   background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+// GLOBAL STYLES
+.main-container{
+  font-size: calc(1em + .5vw);
 }
 
 .blurb{
@@ -41,6 +46,7 @@ html, body{
   h3, h4{
     font-family: 'Raleway', sans-serif;
     color: #c2c2c2;
+    font-weight: 300
   }
   span{
     font-family: 'Raleway', sans-serif;
@@ -59,9 +65,13 @@ html, body{
   }
 }
 
+
+.p-top{
+  padding-top: 100px;
+}
 //--- Sliding Images ---//
 
-.home-intro{
+.homeSliderContainer{
   position: relative;
   height: 100vh;
 }
