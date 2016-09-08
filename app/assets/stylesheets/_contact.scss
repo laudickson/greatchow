@@ -1,12 +1,5 @@
 #contactContentImage1{
-  position:relative;
-  background: image-url('contact_img1.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:85vh;
-  opacity: 0.8;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  background-image: image-url('contact_img1.jpg');
 }
 
 .contactblurb{
@@ -20,26 +13,6 @@
     position: relative;
     padding-left: 3%;
     padding-top: 3%;
-  }
-  @media screen and (max-width: 3000px){
-    p{
-      font-size: 20px;
-    }
-  }
-  @media screen and (max-width: 800px){
-    p{
-      font-size: 16px;
-    }
-  }
-  @media screen and (max-width: 450px){
-    p{
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 350px){
-    p{
-      font-size: 10px;
-    }
   }
 }
 

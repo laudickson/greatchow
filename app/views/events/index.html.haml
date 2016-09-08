@@ -1,14 +1,13 @@
-%section#eventContentImage1{data: {type: 'background', speed: '5'}}
+%section#eventContentImage1{data: {type: 'background', speed: '2'}}
 .blurb.row
   .medium-10.columns.medium-centered
     <h3> Please read on for the <span>latest news</span> and <span>upcoming events</span>. There's always something happening at the <span>Great Chow</span>! </h3>
-- @events.each do |event|
   .row
     .medium-10.medium-centered.columns
-      .event-title
-        %h2= event.event_title
-  .row
-    .medium-10.medium-centered.columns
-      .event-body
-        %p= simple_format(event.body)
-%section#eventContentImage2{data: {type: 'background', speed: '5'}}
+      #eventIndex
+      - @events.each do |event|
+        .event-title
+          %h3= event.event_title
+        .event-body
+          %p= simple_format(event.body)
+%section#eventContentImage2{data: {type: 'background', speed: '2'}}

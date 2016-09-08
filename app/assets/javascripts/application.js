@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui/accordion
 //= require foundation
 //= require jquery.slick
 //= require jquery-tablesorter
@@ -25,6 +26,16 @@ $(function(){
 });
 $(document).ready(function() {
   //--- Foundation initializiation ---//
+
+  $( "#eventIndex" ).accordion({
+    collapsible: true,
+    active: false,
+    heightStyle: 'content',
+    animate: {
+      easing: "easeOutBounce",
+      duration: 700
+    }
+  });
 
   //--- Slick carousel ---//
   $('.homeSlider').not('.slick-initialized').slick({
@@ -52,10 +63,10 @@ $(document).ready(function() {
   $('section[data-type="background"]').each(function(){
        var $bgobj = $(this); // assigning the object
        $(window).scroll(function() {
-           var yPos = -( ($window.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed'));
+           var yPos = -( ($window.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed')).toFixed(3);
 
            // Put together our final background position
-           var coords = '75% '+ yPos.toFixed(2) + 'px';
+           var coords = '50% '+ yPos + 'px';
 
            // Move the background
            $bgobj.css({ backgroundPosition: coords });

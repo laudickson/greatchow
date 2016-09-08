@@ -81,6 +81,8 @@ GEM
       railties (>= 3.1)
     jquery-tablesorter (1.21.4)
       railties (>= 3.2, < 6)
+    jquery-ui-rails (5.0.5)
+      railties (>= 3.2.16)
     json (1.8.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -197,6 +199,7 @@ DEPENDENCIES
   jquery-rails
   jquery-slick-rails
   jquery-tablesorter
+  jquery-ui-rails
   mail_form
   pg (~> 0.15)
   pry-rails

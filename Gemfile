@@ -10,6 +10,7 @@ gem 'foundation-rails', '5.4.3.1'
 gem 'devise'
 gem 'haml'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'jbuilder', '~> 2.0'
 gem "jquery-slick-rails"
 gem 'jquery-tablesorter'

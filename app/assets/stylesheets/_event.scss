@@ -1,40 +1,40 @@
 #eventContentImage1{
-  position:relative;
-  background: image-url('event_img1.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:80vh;
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url('event_img1.jpg');
 }
 
 #eventContentImage2{
-  position:relative;
-  background: image-url('event_img2.jpg') fixed;
-  background-size: cover;
-  max-width: 100%;
-  min-height:50vh;
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url('event_img2.jpg');
+}
+
+.ui-state-focus{
+  outline: none;
+}
+
+#eventIndex{
+  padding-top: 5%;
 }
 
 .event-title{
-  background: #3b1d12;
+  background-color: #3b1d12;
+  transition: 0.4s;
+  cursor: pointer;
   border: solid white 2px;
   position: relative;
   text-align: center;
 
-  h2{
+  &:hover, &:focus{
+    background-color: #756059;
+  }
+
+  h3{
     font-family: 'Raleway', sans-serif;
     color: white;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    font-weight: bold;
+    padding: 2% 2%;
   }
 }
 .event-body{
-  background: #3b1d12;
+  background-color: #4f2718;
   border: dashed white 1px;
   border-top: none;
   margin-bottom: 7%;

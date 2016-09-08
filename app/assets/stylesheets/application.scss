@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery-ui/accordion
  *= require foundation_and_overrides
 
  */
@@ -34,7 +35,7 @@ html, body{
 
 // GLOBAL STYLES
 .main-container{
-  font-size: calc(1em + .5vw);
+  font-size: calc(1rem + .8vw);
 }
 
 .blurb{
@@ -46,52 +47,63 @@ html, body{
   h3, h4{
     font-family: 'Raleway', sans-serif;
     color: #c2c2c2;
-    font-weight: 300
-  }
-  span{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: bold;
+    font-weight: 300;
+    font-size: 1em;
+
+    span{
+      color: white;
+      font-weight: bold;
+    }
   }
 }
 
 .footer{
-  margin-top: 5vh;
   margin-left: 8%;
-  margin-bottom: 3vh;
+  margin-bottom: 3%;
+
   h6{
     font-family: 'Raleway', sans-serif;
     color: white;
   }
-}
 
+  .small-12{
+    padding-top: 5%;
+  }
+}
 
 .p-top{
   padding-top: 100px;
+}
+section{
+  position: relative;
+  max-width: 100%;
+  background-size: cover;
+  min-height: 70vh;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 //--- Sliding Images ---//
 
 .homeSliderContainer{
   position: relative;
   height: 100vh;
+
+  .slide{
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
 }
 
-#homeSlideImage1 {
-  background: image-url('home_slide_img1.jpg');
-	background-size: cover;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  height: 100vh;
+#homeImage1 {
+  background-image: image-url('home_slide_img1.jpg');
 }
-#homeSlideImage2{
-  background: image-url('home_slide_img2.jpg');
-	background-size: cover;
-  max-width: 100%;
-  height: 100vh;
+#homeImage2{
+  background-image: image-url('home_slide_img2.jpg');
 }
-#homeSlideImage3{
-  background: image-url('home_slide_img3.jpg');
-	background-size: cover;
-  max-width: 100%;
-  height: 100vh;
+#homeImage3{
+  background-image: image-url('home_slide_img3.jpg');
 }
