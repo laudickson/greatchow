@@ -29,3 +29,7 @@ Currently only works in development.
 3. run `bundle install`
 4. `foreman start` (instead of `rails s`)
 5. send all da emails
+
+# TODO:
+- mobile nav
+- make sure email is working in production
