@@ -26,6 +26,7 @@
 @import 'slick';
 @import 'slick-theme';
 @import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700');
 
 html, body{
   background: #1b0b05; /* Old browsers */
@@ -38,24 +39,40 @@ html, body{
 }
 
 .blurb{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  text-align: center;
-  overflow:visible;
+  padding-left: 120px;
 
-  h3, h4{
-    font-family: 'Raleway', sans-serif;
-    color: #c2c2c2;
-    font-weight: 300;
+  .blurb-child{
+    width: 45%;
 
-    span{
+    h1{
+      font-family: 'Alegreya Sans SC', sans-serif;
       color: white;
-      font-weight: bold;
+      font-size: 2.3em;
+      font-weight:700;
+      padding-bottom: 20px;
     }
-  }
 
-  h4{
-    font-size: .8em;
+    h3, h4{
+      font-family: 'Raleway', sans-serif;
+      color: #c2c2c2;
+      font-weight: 300;
+
+      span{
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    h4{
+      font-size: .8em;
+    }
   }
 }
 
@@ -95,27 +112,4 @@ section{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-//--- Sliding Images ---//
-
-.homeSliderContainer{
-  position: relative;
-  height: 100vh;
-
-  .slide{
-    background-size: cover;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-}
-
-#homeImage1 {
-  background-image: image-url('home_slide_img1.jpg');
-}
-#homeImage2{
-  background-image: image-url('home_slide_img2.jpg');
-}
-#homeImage3{
-  background-image: image-url('home_slide_img3.jpg');
 }
