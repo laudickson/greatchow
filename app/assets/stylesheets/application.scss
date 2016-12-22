@@ -41,20 +41,30 @@ html, body{
 .blurb{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   align-items: center;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 9vh;
+  margin-bottom: 9vh;
   padding-left: 120px;
-
+  text-align: center;
+  @media screen and (max-height: 700px), screen and (max-width: 500px){
+    flex-flow: column nowrap;
+    padding: 0 40px;
+  }
   .blurb-child{
     width: 45%;
-
+    max-width:625px;
+    @media screen and (max-height: 700px), screen and (max-width: 500px){
+      width: auto;
+      h4{
+        padding-bottom:30px;
+      }
+    }
     h1{
       font-family: 'Alegreya Sans SC', sans-serif;
       color: white;
-      font-size: 2.3em;
+      font-size: 2.5em;
       font-weight:700;
       padding-bottom: 20px;
     }
