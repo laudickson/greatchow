@@ -18,6 +18,7 @@
 //= require jquery-tablesorter
 //= require_tree .
 
+//--- Foundation initializiation ---//
 $(function(){ $(document).foundation(); });
 
 //--- Tablesorter for portal ---//
@@ -25,7 +26,11 @@ $(function(){
   $('#event-table').tablesorter({ sortList: [[1,0]] });
 });
 $(document).ready(function() {
-  //--- Foundation initializiation ---//
+  var $win = $(window);
+  var $nav = $('#navSidebar');
+  var $pictureSection = $('section[data-type="background"]');
+  var $logo = $('#home2');
+  var $logoCaption = $('#homeCaption');
 
   $( "#eventIndex" ).accordion({
     collapsible: true,
@@ -45,48 +50,32 @@ $(document).ready(function() {
   });
 
   //--- Fade Out sidenav on scroll ---//
-  $(window).scroll(function(){
+  $win.scroll(function(){
     if ($(this).scrollTop()>200){
-      $('#navSidebar').fadeIn(500);
-      $('#navSidebar').css('display', 'flex');
+      $nav.fadeIn(500);
+      $nav.css('display', 'flex');
     } else{
-      $('#navSidebar').fadeOut(800);
+      $nav.fadeOut(800);
     }
   });
 
   //--- Parallaxes ---//
-  var $window = $(window);
-  $('section[data-type="background"]').each(function(){
-       var $bgobj = $(this); // assigning the object
-       $(window).scroll(function() {
-           var yPos = -( ($window.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed')).toFixed(3);
+  $pictureSection.each(function(){
+    var $bgobj = $(this); // assigning the object
+    $win.scroll(function() {
 
-           // Put together our final background position
-           var coords = '50% '+ yPos + 'px';
+      // calculations
+      var yPos = -(($win.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed')).toFixed(3);
 
-           // Move the background
-           $bgobj.css({ backgroundPosition: coords });
+      // final background position
+      var coords = '50% '+ yPos + 'px';
+
+      // move the background
+      $bgobj.css({ backgroundPosition: coords });
        });
    });
 
-  //--- Fade Out content ---//
-  $('#content_wrapper').css('visibility', 'visible').hide();
-  $('#content_wrapper').fadeIn(1000);
-
-  // below function causes "fade out"
-  // http://stackoverflow.com/questions/19397515/fading-out-a-whole-page-with-jquery
-  $(document).on("click", "a", function () {
-    var newUrl = $(this).attr("href");
-    if (!newUrl || newUrl[0] === "#") {
-      location.hash = newUrl;
-      return;
-    }
-    $("#content_wrapper").fadeOut(function () {
-      location = newUrl;
-    });
-  });
-
   //--- Home page stuff ---///
-  $('#homeLogo').delay(600).fadeIn(800);
-  $('#homeCaption').delay(1000).fadeIn('slow');
+  $logo.delay(600).fadeIn(800);
+  $logoCaption.delay(1000).fadeIn('slow');
 });

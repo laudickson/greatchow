@@ -23,11 +23,34 @@
 #homeImage3{
   background-image: image-url('home_slide_img3.jpg');
 }
+
+#homeBlurbImage1{
+  height:500px;
+  width:100%;
+  background-image: image-url('home_content_img3.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1%;
+}
  
 #homeLogo{
+  // position: absolute;
+  //
+  // height: 30vh;
+  // width: 40vw;
+  // top: 0;
+  // margin-left: 12vw;
+  // margin-top: 20vh;
+  // background: black;
+  // opacity: 0.85;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+}
+#home2{
   position: absolute;
-  display: none;
-  height: 30vh;
+  display:none;
+  height: 80%;
   width: 40vw;
   top: 0;
   margin-left: 12vw;
@@ -36,8 +59,11 @@
   opacity: 0.85;
   background-size: contain;
   background-repeat: no-repeat;
-}
 
+  @media screen and (max-height: 700px), screen and (max-width: 650px){
+    width: 70%;
+  }
+}
 #homeCaption{
   position: absolute;
   display: none;
@@ -47,8 +73,12 @@
   margin-top: 60vh;
   padding-right:50px;
 
-  @media screen and (max-height: 700px), screen and (max-width: 500px){
-    margin-top: 40vh;
+  @media screen and (max-height: 700px), screen and (max-width: 650px){
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin-left: 12vw;
+    padding: 0;
   }
 
   h1{
@@ -56,12 +86,20 @@
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: calc(2em + 0.4vw);
+    text-shadow: 1px 1px 2px black;
   }
 
   h5{
     color: silver;
     font-family: 'Raleway', sans-serif;
   }
+}
+
+.hours{
+  padding-top: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+
 }
 
 #homeContentImage1{

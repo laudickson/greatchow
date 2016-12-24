@@ -30,7 +30,8 @@
 
 html, body{
   background: #1b0b05; /* Old browsers */
-  background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(135deg, #311409
+ 34%,#9c401d 82%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 // GLOBAL STYLES
@@ -40,43 +41,57 @@ html, body{
 
 .blurb{
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
-  margin-top: 9vh;
-  margin-bottom: 9vh;
-  padding-left: 120px;
+  margin: 5vh 0;
+  padding-left: 100px;
   text-align: center;
-  @media screen and (max-height: 700px), screen and (max-width: 500px){
-    flex-flow: column nowrap;
-    padding: 0 40px;
+
+  &.r{
+    flex-direction: row;
+    @media screen and (max-height: 700px), screen and (max-width: 650px){
+      flex-direction: column;
+      padding: 0 40px;
+    }
   }
+
+  &.c{
+    flex-direction: column;
+  }
+
   .blurb-child{
-    width: 45%;
-    max-width:625px;
-    @media screen and (max-height: 700px), screen and (max-width: 500px){
-      width: auto;
+    width: 80vw;
+    padding: 0 10px;
+    // max-width: 80%;
+    @media screen and (max-height: 700px), screen and (max-width: 650px){
+      width: 100%;
       h4{
         padding-bottom:30px;
       }
     }
     h1{
-      font-family: 'Alegreya Sans SC', sans-serif;
+      font:{
+        family: 'Alegreya Sans SC', sans-serif;
+        size: calc(2em + 0.9vw);
+        weight: 700;
+      }
       color: white;
-      font-size: 2.5em;
-      font-weight:700;
       padding-bottom: 20px;
+      text-shadow: 1px 1px 2px black;
     }
 
     h3, h4{
-      font-family: 'Raleway', sans-serif;
+      font:{
+        family: 'Raleway', sans-serif;
+        weight: 300;
+      }
       color: #c2c2c2;
-      font-weight: 300;
 
       span{
         color: white;
         font-weight: bold;
+        text-shadow: .5px .5px 1px black;
       }
     }
 
@@ -118,8 +133,7 @@ section{
   max-width: 100%;
   background-size: cover;
   min-height: 70vh;
-  opacity: 0.8;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
