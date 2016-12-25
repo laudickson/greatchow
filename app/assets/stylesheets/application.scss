@@ -63,7 +63,7 @@ html, body{
   .blurb-child{
     width: 80vw;
     padding: 0 10px;
-    // max-width: 80%;
+    max-width: 1000px;
     @media screen and (max-height: 700px), screen and (max-width: 650px){
       width: 100%;
       h4{
@@ -82,16 +82,25 @@ html, body{
     }
 
     h3, h4{
+      color: #e6e6e6;
       font:{
         family: 'Raleway', sans-serif;
         weight: 300;
       }
-      color: #c2c2c2;
 
       span{
         color: white;
         font-weight: bold;
         text-shadow: .5px .5px 1px black;
+      }
+
+      &#menuTagUp{
+        text-align: left;
+      }
+
+      &#menuTagDown{
+        text-align: right;
+        margin-top: 5%;
       }
     }
 
@@ -123,6 +132,28 @@ html, body{
   .small-12{
     padding-top: 5%;
   }
+}
+
+.contentImage{
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: image-url('menu_img2.jpg');
+  height: 100vh;
+  -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
+  animation: 1.5s ease 0s normal forwards 1 fadein;
+}
+@keyframes fadein{
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    100% { opacity:1; }
 }
 
 .p-top{

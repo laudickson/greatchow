@@ -31,6 +31,7 @@ $(document).ready(function() {
   var $pictureSection = $('section[data-type="background"]');
   var $logo = $('#home2');
   var $logoCaption = $('#homeCaption');
+  var $menuIntro = $('#menu');
 
   $( "#eventIndex" ).accordion({
     collapsible: true,
@@ -76,6 +77,6 @@ $(document).ready(function() {
    });
 
   //--- Home page stuff ---///
-  $logo.delay(600).fadeIn(800);
-  $logoCaption.delay(1000).fadeIn('slow');
+  $logo.delay(800).fadeIn(800);
+  $logoCaption.delay(1500).fadeIn('slow');
 });

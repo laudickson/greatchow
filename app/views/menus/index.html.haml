@@ -1,29 +1,35 @@
-%section#menuContentImage1{data: {type: 'background', speed: '2'}}
-.blurb.row
-  .medium-10.columns.medium-centered
-    .row
-      .medium-6.columns
-        %h3
-          People from all walks of life frequent inside for one common reason: they all come for they
-          %span Great Chow
-      .medium-6.columns
-        %h3
-          They all know that the most important
-          %span natural
-          ingredients are mandates of the menu and
-          %span
-          service is top priority.
+#menu.contentImage
+  %span Menu
+.blurb.c
+  .blurb-child
+    %h3#menuTagUp
+      People from
+      %span all walks of life
+      frequent inside for one common reason: they all come for they
+      %span Great Chow
+      \.
+    %h3#menuTagDown
+      They all know that the most important
+      %span natural
+      ingredients are mandates of the menu and
+      %span service
+      is top priority.
+    %h3
+    %br
+    %br
+      {{Eventually menu items at in-store restaurant prices will go here}}
+    %br
+    %br
 %section#menuContentImage2{data: {type: 'background', speed: '2'}}
-.blurb.row
-  .medium-8.columns.medium-centered
+.blurb.c
+  .blurb-child
     %h3
       %span Great Chow
       offers take-out from both locations. Please click on a menu below to download a copy.
-  .row
-    .medium-8.columns.medium-centered
-      .takeout-menu
-        =link_to 'Abington Takeout Menu', asset_path("abingtontakeoutmenu.pdf", format: :pdf), class: 'button large radius', style: "border: solid silver 1px; font-family: 'Raleway';"
-        =link_to 'Quincy Wollaston Takeout Menu', asset_path("wollastontakeoutmenu.pdf", format: :pdf), class: 'button large radius', style: "border: solid silver 1px; font-family: 'Raleway';"
-  .medium-10.columns.medium-centered
-    %h3 Bon Appétit!
+  .blurb-child
+    .takeout-menu
+      =link_to 'Abington Takeout Menu', asset_path("abingtontakeoutmenu.pdf", format: :pdf), class: 'button large radius'
+      =link_to 'Quincy Wollaston Takeout Menu', asset_path("wollastontakeoutmenu.pdf", format: :pdf), class: 'button large radius'
+    %h3
+      %span Bon Appétit!
 %section#menuContentImage3{data: {type: 'background', speed: '2'}}
