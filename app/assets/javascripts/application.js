@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui/accordion
+//= require jquery-ui/widgets/accordion
 //= require foundation
 //= require jquery.slick
 //= require jquery-tablesorter
@@ -32,6 +32,7 @@ $(document).ready(function() {
   var $logo = $('#home2');
   var $logoCaption = $('#homeCaption');
   var $menuIntro = $('#menu');
+  var $menucaption = $('#menuCaption')
 
   $( "#eventIndex" ).accordion({
     collapsible: true,

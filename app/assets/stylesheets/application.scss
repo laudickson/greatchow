@@ -110,6 +110,20 @@ html, body{
   }
 }
 
+.mainCaption{
+  font:{
+    family: 'Alegreya Sans SC', sans-serif;
+    size: calc(2em + 0.9vw);
+    weight: 700;
+  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transform: translate(-50%, -50%);
+}
+
 .footer{
   margin-left: 10%;
   margin-bottom: 3%;
