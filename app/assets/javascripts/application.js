@@ -25,6 +25,23 @@ $(function(){ $(document).foundation(); });
 $(function(){
   $('#event-table').tablesorter({ sortList: [[1,0]] });
 });
+//--- Slick carousel ---//
+$('.homeSlider').not('.slick-initialized').slick({
+    autoplay: true,
+    autoplaySpeed: 2100,
+    fade: true,
+    infinite: true,
+    speed: 900,
+    prevArrow: false,
+    nextArrow: false
+});
+
+$( "#eventIndex" ).accordion({
+  collapsible: true,
+  active: false,
+  heightStyle: 'content'
+});
+
 $(document).ready(function() {
   var $win = $(window);
   var $nav = $('#navSidebar');
@@ -32,24 +49,6 @@ $(document).ready(function() {
   var $logo = $('#home2');
   var $logoCaption = $('#homeCaption');
   var $menuIntro = $('#menu');
-  var $menucaption = $('#menuCaption')
-
-  $( "#eventIndex" ).accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: 'content'
-  });
-
-  //--- Slick carousel ---//
-  $('.homeSlider').not('.slick-initialized').slick({
-      autoplay: true,
-      autoplaySpeed: 2100,
-      fade: true,
-      infinite: true,
-      speed: 900,
-      prevArrow: false,
-      nextArrow: false
-  });
 
   //--- Fade Out sidenav on scroll ---//
   $win.scroll(function(){

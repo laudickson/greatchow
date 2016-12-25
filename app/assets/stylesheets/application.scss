@@ -157,8 +157,8 @@ html, body{
   background-attachment: fixed;
   background-image: image-url('menu_img2.jpg');
   height: 100vh;
-  -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
-  animation: 1.5s ease 0s normal forwards 1 fadein;
+  -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+  animation: 2s ease 0s normal forwards 1 fadein;
 }
 @keyframes fadein{
     0% { opacity:0; }
@@ -177,7 +177,7 @@ section{
   position: relative;
   max-width: 100%;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 80vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
