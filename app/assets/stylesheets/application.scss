@@ -26,10 +26,12 @@
 @import 'slick';
 @import 'slick-theme';
 @import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700');
 
 html, body{
   background: #1b0b05; /* Old browsers */
-  background: linear-gradient(135deg, #1b0b05 20%,#5a2511 72%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(135deg, #311409
+ 34%,#9c401d 82%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 // GLOBAL STYLES
@@ -38,25 +40,88 @@ html, body{
 }
 
 .blurb{
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 5vh 0;
+  padding-left: 100px;
   text-align: center;
-  overflow:visible;
 
-  h3, h4{
-    font-family: 'Raleway', sans-serif;
-    color: #c2c2c2;
-    font-weight: 300;
-
-    span{
-      color: white;
-      font-weight: bold;
+  &.r{
+    flex-direction: row;
+    @media screen and (max-height: 700px), screen and (max-width: 650px){
+      flex-direction: column;
+      padding: 0 40px;
     }
   }
 
-  h4{
-    font-size: .8em;
+  &.c{
+    flex-direction: column;
   }
+
+  .blurb-child{
+    width: 80vw;
+    padding: 0 10px;
+    max-width: 1000px;
+    @media screen and (max-height: 700px), screen and (max-width: 650px){
+      width: 100%;
+      h4{
+        padding-bottom:30px;
+      }
+    }
+    h1{
+      font:{
+        family: 'Alegreya Sans SC', sans-serif;
+        size: calc(2em + 0.9vw);
+        weight: 700;
+      }
+      color: white;
+      padding-bottom: 20px;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    h3, h4{
+      color: #e6e6e6;
+      font:{
+        family: 'Raleway', sans-serif;
+        weight: 300;
+      }
+
+      span{
+        color: white;
+        font-weight: bold;
+        text-shadow: .5px .5px 1px black;
+      }
+
+      &#menuTagUp{
+        text-align: left;
+      }
+
+      &#menuTagDown{
+        text-align: right;
+        margin-top: 5%;
+      }
+    }
+
+    h4{
+      font-size: .8em;
+    }
+  }
+}
+
+.mainCaption{
+  font:{
+    family: 'Alegreya Sans SC', sans-serif;
+    size: calc(2em + 0.9vw);
+    weight: 700;
+  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transform: translate(-50%, -50%);
 }
 
 .footer{
@@ -83,6 +148,28 @@ html, body{
   }
 }
 
+.contentImage{
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: image-url('menu_img2.jpg');
+  height: 100vh;
+  -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
+  animation: 1.5s ease 0s normal forwards 1 fadein;
+}
+@keyframes fadein{
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
 .p-top{
   padding-top: 100px;
 }
@@ -91,31 +178,7 @@ section{
   max-width: 100%;
   background-size: cover;
   min-height: 70vh;
-  opacity: 0.8;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-//--- Sliding Images ---//
-
-.homeSliderContainer{
-  position: relative;
-  height: 100vh;
-
-  .slide{
-    background-size: cover;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-}
-
-#homeImage1 {
-  background-image: image-url('home_slide_img1.jpg');
-}
-#homeImage2{
-  background-image: image-url('home_slide_img2.jpg');
-}
-#homeImage3{
-  background-image: image-url('home_slide_img3.jpg');
 }

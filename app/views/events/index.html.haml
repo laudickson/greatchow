@@ -1,6 +1,7 @@
-%section#eventContentImage1{data: {type: 'background', speed: '2'}}
-.blurb.row
-  .medium-8.columns.medium-centered
+#event.contentImage
+  %p.mainCaption Events
+.blurb.c
+  .blurb-child
     %h3
       Please click on each header to check out the
       %span latest news
@@ -9,12 +10,11 @@
       There's always something happening at the
       %span Great Chow
       !
-.row
-  .medium-8.medium-centered.columns
+  .blurb-child
     #eventIndex
       - @events.each do |event|
         .event-title
-          %h3= event.event_title
+          %h3#eventTitle= event.event_title
         .event-body
           %p= simple_format(event.body)
 %section#eventContentImage2{data: {type: 'background', speed: '2'}}

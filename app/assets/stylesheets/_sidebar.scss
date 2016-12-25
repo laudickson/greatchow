@@ -1,4 +1,13 @@
 #navSidebar{
+  background: rgba(19,19,19,0.8);
+  background: -moz-linear-gradient(left, rgba(19,19,19,0.8) 0%, rgba(19,19,19,0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,19,19,0.8)), color-stop(100%, rgba(19,19,19,0)));
+  background: -webkit-linear-gradient(left, rgba(19,19,19,0.8) 0%, rgba(19,19,19,0) 100%);
+  background: -o-linear-gradient(left, rgba(19,19,19,0.8) 0%, rgba(19,19,19,0) 100%);
+  background: -ms-linear-gradient(left, rgba(19,19,19,0.8) 0%, rgba(19,19,19,0) 100%);
+  background: linear-gradient(to right, rgba(19,19,19,0.8) 0%, rgba(19,19,19,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#131313', GradientType=1 );
+
   height: 100%;
   width: 100px;
   display: none;
@@ -12,8 +21,7 @@
 
   a{
     display: block;
-    transition: 0.3s;
-
+    transition: 0.5s ease;
     i{
       color: white;
       font-size: 35px;
@@ -23,8 +31,12 @@
       color: white;
     }
     &:hover{
-      transition: background-color 1s ease;
-      background-color: #e67300;
+      background-color: rgba(230,115,0,0.8);
+      border-bottom-right-radius: 20%;
+      border-top-left-radius: 20%;
+      border-bottom-left-radius:1%;
+      border-top-right-radius: 1%;
+      padding: 20px 0;
     }
   }
 }

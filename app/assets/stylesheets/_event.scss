@@ -1,4 +1,4 @@
-#eventContentImage1{
+#event{
   background-image: image-url('event_img1.jpg');
 }
 
@@ -21,13 +21,18 @@
   text-align: center;
 
   &:hover, &:focus{
+    transition: 0.4s;
     background-color: #756059;
+
+    h3#eventTitle{
+      transition:0.3s;
+      color:white;
+    }
   }
 
-  h3{
+  h3#eventTitle{
     font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: bold;
+    color: #c2c2c2;
     padding: 2% 2%;
   }
 }

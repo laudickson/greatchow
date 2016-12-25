@@ -1,12 +1,14 @@
 .takeout-menu{
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  flex-flow: row nowrap;
+  justify-content: center;
 
   a{
-    margin-top: 2vh;
-    border: solide white 1px;
+    border: solid white 1px;
     background-color: #6d0019;
+    margin: 20px;
+    font-family: 'Raleway';
   }
   a:hover{
     transition: background-color 1s ease;
@@ -14,12 +16,13 @@
   }
 }
 
-#menuContentImage1{
-  background-image: image-url('menu_img1.jpg');
+#menu{
+  background-image: image-url('menu_img2.jpg');
 }
 
 #menuContentImage2{
-  background-image: image-url('menu_img2.jpg');
+  background-image: image-url('menu_img1.jpg');
+  background-position: bottom center;
 }
 
 #menuContentImage3{
