@@ -4,12 +4,12 @@ Rails.application.routes.draw do
 
   resources :menus, only: :index
   resources :events, only: :index
-  resources :contacts, only: [:index, :new, :create]
+  resources :contacts, only: [:index, :create]
   resources :rewards, only: :index
   resources :portals, only: :index
   resources :press, only: :index
 
-  match '/contacts', to: 'contacts#new', via: 'get', :as => :contact
+  # match '/contacts', to: 'contacts#new', via: 'get', :as => :contact
 
   authenticate :admin do
     resources :events, only: [:new, :create, :update, :edit, :destroy]
