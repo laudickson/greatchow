@@ -3,12 +3,12 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
-  def new
-    @contact = Contact.new
-  end
-
   def create
-    @contact = Contact.new(contact_params)
+    @contact = Contact.new(
+      :name => contact_params[:name],
+      :email => contact_params[:email],
+      :message => contact_params[:message]
+    )
     @contact.request = request
     if @contact.deliver
       flash.now[:notice] = "Thank you for your message. We'll get back to you soon!"

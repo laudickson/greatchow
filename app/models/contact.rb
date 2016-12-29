@@ -7,7 +7,9 @@ class Contact < MailForm::Base
   def headers
     {
       subject: "Great Chow Contact Form",
-      to: "klamgc18@live.com",
+      # EDIT THIS TO UPDATE RECIPIENT
+      # to: "klamgc18@live.com",
+      to: "jscho13@gmail.com",
       from: %("#{name}" <#{email}>)
     }
   end
