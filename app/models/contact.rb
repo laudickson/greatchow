@@ -8,8 +8,8 @@ class Contact < MailForm::Base
     {
       subject: "Great Chow Contact Form",
       # EDIT THIS TO UPDATE RECIPIENT
-      # to: "klamgc18@live.com",
-      to: "jscho13@gmail.com",
+      to: "klamgc18@live.com",
+      # to: "jscho13@gmail.com",
       from: %("#{name}" <#{email}>)
     }
   end
